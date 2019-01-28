@@ -9,8 +9,8 @@ The E2E NLG module leverages the seq2seq framework for end-to-end natural langua
 In the _e2e_nlg_ folder, optionally put your input files in the _data_ folder. Run _main.py_ in one of the following ways to run the training, or the evaluation (only after the training has been run):
 
 ```
-python main.py --train [path_to_trainset] [path_to_devset]
-python main.py --test [path_to_testset]
+python run_task.py --train [path_to_trainset] [path_to_devset]
+python run_task.py --test [path_to_testset]
 ```
 
 Replace [path_to_trainset], [path_to_devset], [path_to_testset] with relative paths to your trainset, devset, or testset, respectively. They are expected to be CSV files with two columns (their headers must be _mr_ and _ref_, respectively), the first containing the MRs, and the second containing the corresponding reference utterances.
